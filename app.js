@@ -9,6 +9,7 @@ var login = require('./routes/login')
   , http = require('http')
   , path = require('path')
   , books = require('./routes/librarian/books')
+    , patron =   require('./routes/patron/transaction');
 
 var connectionpool = require('./routes/connectionpool');
 
@@ -38,6 +39,7 @@ app.post('/logout',login.logout);
 app.get('/activateUser',login.activateUser);
 
 app.use('/book',books);
+app.use('/patron',patron);
 
 
 // catch 404 and forward to error handler

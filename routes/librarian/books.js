@@ -65,23 +65,6 @@ router.get('/delete', function (req,res) {
     });
 });
 
-/*router.get('/delete', function (req,res) {
-    var bookId = parseInt(req.query.bookId);
-
-    db.query('DELETE FROM books where bookid=? AND isBorrowed=0',[bookId], function (err, rows, field) {
-        if (err) throw err;
-
-        if (rows.affectedRows > 0) {
-            console.log(rows);
-            res.json({success: "1", message: "Deleted the record successfully"});
-
-        }
-        else {
-            res.json({success: "0", message: "Delete failed"});
-        }
-    });
-});*/
-
 router.post('/update',function (req, res, next) {
     var updateBookId = req.body.bookId,
         updateTitle = req.body.title,
@@ -117,6 +100,9 @@ router.post('/update',function (req, res, next) {
     })
 });
 
+router.get('/check', function(req, res){
+    res.json({message: "successful setup"});
+});
 
 
 module.exports = router;
