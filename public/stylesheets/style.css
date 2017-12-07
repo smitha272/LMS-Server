@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+I_278 {
+    bottom: 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    left: 40px;
+    position: absolute;
+    right: -6px;
+    text-align: left;
+    top: 3px;
+    white-space: nowrap;
+    width: 6px;
+    z-index: 2;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 7px 7px;
+    transform-origin: 7px 7px;
+    background: rgb(241, 142, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 2px 2px 2px 2px;
+    font: normal normal bold normal 11px / normal Arial;
+    list-style: none outside none;
+    margin: 0px 0px 0px 2px;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 1px 4px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container ">
+  
+  <div class = "col-md-offset-4 col-md-4" align = "center" style="padding-top:70px">
+   		<img src ="https://upload.wikimedia.org/wikipedia/commons/4/48/EBay_logo.png" width = "200" />
+  </div>
+  <ul class="nav nav-tabs  col-md-offset-4 col-md-4">
+    <li class="active"><a data-toggle="tab" href="#Login">Login</a></li>
+    <li><a data-toggle="tab" href="#Signup">Signup</a></li>
+  </ul>
+
+  <div   class="tab-content">
+    <div id="Login" class="tab-pane fade in active">
+    <div class="container  col-md-offset-4 col-md-4">
+	
+      <form class="form-signin" action="/signin" method = "post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name='inputEmail' id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <br>
+        
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name='inputPassword' id="inputPassword" class="form-control" placeholder="Password" required="">
+        <label  for="card-holder-name"><font color="red"><%= err %></font></label>
+        
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  
+    </div>
+    <div id="Signup" class="tab-pane fade">
+    <div class="container  col-md-offset-4 col-md-4" >
+	     <form class="form-signin" action="/signup" method = "post">
+	        <h2 class="form-signin-heading">Welcome to ebay !!!</h2>
+	         <label for="firstName" class="sr-only">First Name</label>
+	        <input type="text" name='firstname' id="firstName" class="form-control" placeholder="First Name" required="" autofocus="">
+	        <br>
+	         <label for="lastName" class="sr-only">Last Name</label>
+	        <input type="text" name='lastname' id="lastName" class="form-control" placeholder="Last Name" required="" autofocus="">
+	        <br>
+	        <label for="inputEmail" class="sr-only">Email address</label>
+	        <input type="email" name='email' id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+	        <br>
+	        
+	        <label for="inputPassword" class="sr-only">Password</label>
+	        <input type="password" name='password' id="inputPassword" class="form-control" placeholder="Password" required="">
+	        <br>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+	      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
